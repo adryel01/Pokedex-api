@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-brand-1);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+header>img {
+    width: 60%;
+}
+
+form {
+    width: 100%;
+    max-width: 530px;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    width: 85%;
+    height: 3rem;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 0.5rem;
+}
+
+::placeholder {
+    font-size: var(--font-size-text-2);
+    padding-left: 0.5rem;
+}
+
+.button-search {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--color-button);
+}
+
+.container {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: var(--font-size-title-1);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+h2 {
+    font-size: var(--font-size-title-2);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul>li {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--font-size-text-2);
+    background-color: var(--color-brand-3);
+    border: 4px var(--color-brand-2) solid;
+    border-radius: 16px;
+    padding: 0 0.5rem;
+}
+
+ul>li>img {
+    height: 6rem;
+}
+
+.button-up {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--color-button);
+    color: var(--color-grey-4);
+}
+
+.modal-bg{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-opacity);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container{
+  position: relative;
+  padding-bottom: 200px;  
+}
+
+
+
+.modal-square{
+    height: 25rem;
+}
+
+.poke-info{
+    height: 160px;
+    width: 250px;
+    background-color: var(--color-info);
+    position: absolute;
+    bottom: 50px;
+    left: 18px;
+    border-radius: 16px;
+    border: 2px var(--color-grey-1) solid;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 8px;
+    line-height: 16px;
+}
+
+.infos-pokemons{
+    font-size: smaller;
+}
+
+#loading-2{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    z-index: 2;
+    font-size:8px;
+}
+
+#loading-3{
+    position: absolute;
+    width: max-content;
+    bottom: 60px;
+    left: 5px;
+    font-size: small;
+}
+
+.pokemon-modal{
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    z-index: 2;
+    height: 80px;
+}
+
+.modal-button{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 1;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.modal{
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+
+    header>img {
+        width: 25%;
+    }
+
+    .container{
+        width: 65%;
+        padding-top: 5rem;
+    }
+
+    h2{
+        padding-bottom: 5rem;
+    }
+
+    ul>li {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 1rem;
+        font-size: var(--font-size-text-2);
+        background-color: var(--color-brand-3);
+        border: 4px var(--color-brand-2) solid;
+        border-radius: 16px;
+        padding: 0 0.5rem;
+    }
+
+    ul>li>img{
+        height: 5rem;
+    }
+}

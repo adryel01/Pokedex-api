@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/requests.js" defer></script>
+    <script src="./src/scripts/index.js" defer></script>
+    <title>Consumindo PokeAPI</title>
+  </head>
+
+  <body>
+    <div class="modal-bg modal">
+      <section class="modal-container">
+        <h1 id="loading-2">Carregando...</h1>
+        <img class='modal-square' src="./src/assets/pokedexmobile.png" alt="pokedex-modal">
+        <!-- <div class="poke-info">
+          <p id="loading-3">Buscando dados...</p>
+        </div> -->
+        <button class="modal-button">X</button>
+      </section>  
+    </div>
+
+    <header>
+      <img src="./src/assets/pokeapi.png" alt="Logo PokeAPI">
+      <form>
+        <input type="text" placeholder="Procure um Pokemon">
+        <button type="submit" class="button-search"><img src="./src/assets/search-icon.png" alt="ícone de busca"></button>
+      </form>
+    </header>
+
+    <main class="container">
+      <h1 id="loading">Carregando...</h1>
+      <h2 id="title-list"></h2>
+      <ul class="list-pokemons"></ul>
+      <a href="#" class="button-up">↑</a>
+    </main>
+    
+  </body>
+</html>
